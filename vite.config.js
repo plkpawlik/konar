@@ -32,9 +32,6 @@ export default defineConfig({
 
     // wsl dev server polling
     server: {
-
-        host: true,
-
         watch: {
             usePolling: true,
         }
