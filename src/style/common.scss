@@ -1,0 +1,20 @@
+/*  Basic setings
+/*   *   *   *   *   *   *   *   *   *   */
+
+// color schema
+$bg-dark: #343a40;
+$bg-light: #f8f9fa;
+$bg-primary: #0d6efd;
+$bg-active: #ff7eee;
+
+// font propeties
+$font-size: 16px;
+$font-color: #343434;
+
+
+/*  Basic propeties
+/*   *   *   *   *   *   *   *   *   *   */
+
+@mixin transition( $property: all ) {
+    transition: $property ease 200ms;
+}
