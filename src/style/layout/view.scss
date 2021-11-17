@@ -1,0 +1,27 @@
+main#view {
+
+    flex-grow: 1;
+
+    animation-name: easeInMainView;
+    animation-delay: .2s;
+    animation-duration: .8s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+}
+
+/*  Animations
+/*   *   *   *   *   *   *   *   *   *   */
+
+@keyframes easeInMainView {
+
+    from {
+
+        opacity: 0;
+
+    } to {
+        
+        opacity: 1;
+    }
+}

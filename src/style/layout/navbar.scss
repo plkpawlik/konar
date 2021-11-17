@@ -1,0 +1,174 @@
+nav#navbar {
+
+    @include transition();
+
+    position: sticky;
+    z-index: 100;
+    right: 0;
+    left: 0;
+    top: 0;
+
+    padding: 0 2rem;
+    height: 64px;
+
+    backdrop-filter: blur( 10px );
+    background-color: rgba( $c-primary, .5 );
+    border-bottom: .2rem solid $c-dark;
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+
+    button.toggler {
+
+        width: 2.5rem;
+        height: 2.5rem;
+
+        background: transparent;
+        outline: none;
+        border: none;
+
+        position: relative;
+
+        &::before, &::after {
+
+            @include transition();
+
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            
+            width: 100%;
+            height: .2rem;
+
+            border-radius: .2rem;
+            background-color: $font-color;
+            transform: translate( -50%, -50% ) rotate( 0 );
+        }
+
+        &::before { box-shadow: 0 1rem $font-color; }
+        &::after { box-shadow: 0 -1rem $font-color; }
+
+        &.expand {
+            &::before { box-shadow: 0 0rem $font-color; transform: translate( -50%, -50% ) rotate( 45deg ); }
+            &::after { box-shadow: 0 0rem $font-color; transform: translate( -50%, -50% ) rotate( -45deg ); }
+        }
+    }
+
+    section.links {
+
+        @include transition();
+
+        overflow-x: hidden;
+        overflow-y: hidden;
+        flex-grow: 1;
+        gap: .5rem;
+
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    
+        justify-content: flex-end;
+        align-content: center;
+        align-items: center;
+
+        .nav-link {
+
+            @include transition();
+
+            overflow-y: hidden;
+            overflow-x: hidden;
+
+            display: block;
+            padding: .5rem;
+            position: relative;
+
+            font-size: 1.25rem;
+            color: $font-color;
+            letter-spacing: .1rem;
+            text-transform: uppercase;
+
+            &::before {
+
+                @include transition();
+                
+                content: '';
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+
+                transform: translate( -50%, 150% );
+
+                width: 75%;
+                height: .2rem;
+                border-radius: .2rem;
+                background-color: $c-third;
+            }
+
+            &:hover::before {
+                
+                transform: translate( -50%, -50% );
+            }
+
+            &.active::before {
+
+                background-color: $c-secondary;
+                transform: translate( -50%, -50% );
+            }
+        }
+    }
+}
+
+
+/*  Media queries
+/*   *   *   *   *   *   *   *   *   *   */
+
+// bootstrap md -> lg brakpoint
+@media screen and ( max-width: 991px ) {
+nav#navbar {
+
+    button.toggler { z-index: 300; }
+
+    section.links {
+
+        position: absolute;
+        z-index: -200;
+        opacity: 0;
+        left: 0;
+        top: 0;
+
+        width: 100vw;
+        height: 100vh ;
+
+        flex-direction: column;
+        justify-content: center;
+
+        background-color: $c-primary;
+        transform: translate( -100%, 0 );
+        
+        .nav-link {
+
+            font-size: 1.5rem;
+        }
+
+        &.expand {
+            
+            opacity: 1;
+            z-index: 200;
+            transform: translate( 0, 0 ) ;
+        }
+    }
+}}
+
+
+// bootstrap md -> lg brakpoint
+@media screen and ( min-width: 992px ) {
+nav#navbar {
+
+    button.toggler { display: none; }
+}}

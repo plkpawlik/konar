@@ -10,12 +10,17 @@ export default {
 
         // about us page
         about: { path: '/about', name: 'about', display: 'O nas' },
+    
+        // contact page
+        contact: { path: '/contact', name: 'contact', display: 'Kontakt' },
+
+        // projects list
+        projects: { path: '/projects', name: 'projects', display: 'Projekty' },
         
         // management page
         management: { path: '/management', name: 'management', display: 'Zarząd' },
         
-        // news page
-        news: { path: '/news', name: 'news', display: 'Aktualności' },
+        // tournaments page
+        tournaments: { path: '/tournaments', name: 'tournaments', display: 'Zawody' },
     },
-
 };

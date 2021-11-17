@@ -4,7 +4,7 @@ import React from 'react';
 /*  Component schema
 /*   *   *   *   *   *   *   *   *   *   */
 
-export default function News() {
+export default function Contact() {
 
     
 
@@ -14,7 +14,7 @@ export default function News() {
 return(
     <>
 
-        <h1 className='display-3'>News</h1>
+        <h1 className='display-3'>Contact</h1>
 
     </>
 )};

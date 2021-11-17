@@ -1,8 +1,6 @@
-/*  External dependencies
-/*   *   *   *   *   *   *   *   *   *   */
-
 // import common variables
 @import 'common';
+
 
 /*  Basic setings
 /*   *   *   *   *   *   *   *   *   *   */
@@ -16,9 +14,6 @@
 
 :root {
 
-    text-align: justify;
-    color: $font-color;
-
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: $font-size;
     font-weight: 300;
@@ -29,35 +24,42 @@ html {
     scroll-behavior: smooth;
 }
 
-body::-webkit-scrollbar {
+body {
+
+    text-align: justify;
+    color: $font-color;
+
+    background-color: $c-primary;
+}
+
+#root::-webkit-scrollbar {
     width: 0.33rem;
 }
 
-body::-webkit-scrollbar-track {
-    background-color: $bg-dark;
+#root::-webkit-scrollbar-track {
+    background-color: $c-dark;
 }
 
-body::-webkit-scrollbar-thumb {
-    background-color: $bg-primary;
-}
-
-body {
-
-    overflow-x: hidden;
-    background-color: $bg-light;
+#root::-webkit-scrollbar-thumb {
+    background-color: $c-active;
 }
 
 #root {
 
     overflow-x: hidden;
-    
-    height: auto;
+    overflow-y: scroll;
+
+    height: 100vh;
     width: 100vw;
+
+    display: flex;
+    flex-direction: column;
 }
 
 
 /*  Layout setings
 /*   *   *   *   *   *   *   *   *   *   */
 
-// import basic layout
-@import 'layout';
+@import 'layout/navbar';
+
+@import 'layout/view';
