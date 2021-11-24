@@ -23,6 +23,8 @@ return(
 
             <button className={`toggler ${ expand ? 'expand' : '' }`} onClick={ () => setExpand( prev => !prev ) }>
             </button>
+
+            <img className="logo" src="/public/KoNaR_logo_horizontal_small_transparent.png" alt="Konar" />
             
             <section className={`links ${ expand ? 'expand' : '' }`}>
 
