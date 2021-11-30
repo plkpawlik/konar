@@ -8,12 +8,12 @@ nav#navbar {
     left: 0;
     top: 0;
 
-    padding: 0 2rem;
+    padding: 0 1rem;
     height: 64px;
 
     backdrop-filter: blur( 10px );
     background-color: rgba( $c-primary, .5 );
-    border-bottom: .2rem solid $c-dark;
+    // border-bottom: .2rem solid $c-dark;
 
     display: flex;
     flex-wrap: nowrap;
@@ -58,6 +58,11 @@ nav#navbar {
             &::before { box-shadow: 0 0rem $font-color; transform: translate( -50%, -50% ) rotate( 45deg ); }
             &::after { box-shadow: 0 0rem $font-color; transform: translate( -50%, -50% ) rotate( -45deg ); }
         }
+    }
+
+    img.logo {
+        height: 100%;
+        filter: brightness(.9) contrast(1.2);
     }
 
     section.links {
@@ -171,4 +176,21 @@ nav#navbar {
 nav#navbar {
 
     button.toggler { display: none; }
+}}
+
+// "O NAS" was buggy
+@media screen and ( max-width: 1000px ) {
+nav#navbar {
+    img.logo {
+        height: 60px;
+        top: 0.5rem;
+    }
+}}
+
+@media screen and ( max-width: 395px ) {
+nav#navbar {
+    img.logo {
+        height: 45px;
+        top: 0.3rem;
+    }
 }}
