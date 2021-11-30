@@ -5,6 +5,8 @@ import { NavLink } from 'react-router-dom';
 import config from '@/utility/config';
 
 
+const KoNaR_logo = '/KoNaR_logo_horizontal_small_transparent.png';
+
 /*  Component schema
 /*   *   *   *   *   *   *   *   *   *   */
 
@@ -24,7 +26,7 @@ return(
             <button className={`toggler ${ expand ? 'expand' : '' }`} onClick={ () => setExpand( prev => !prev ) }>
             </button>
 
-            <img className="logo" src="/public/KoNaR_logo_horizontal_small_transparent.png" alt="Konar" />
+            <img className="logo" src={KoNaR_logo} alt="Konar" />
             
             <section className={`links ${ expand ? 'expand' : '' }`}>
 
