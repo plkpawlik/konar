@@ -1,5 +1,6 @@
 import React from 'react';
 import Emys from '/emys.svg';
+import Sponsors from './sponsors';
 
 import "/src/style/layout/home.scss";
 
@@ -8,14 +9,15 @@ import "/src/style/layout/home.scss";
 
 export default function Home() {
 
-    
-
 /*  Component layout
 /*   *   *   *   *   *   *   *   *   *   */
 
 return(
     <>
         <div id="wrapper">
+
+            <Sponsors visibility="hidden"/>
+
             {/* robot bedzie do wymiany */}
             <img src={Emys} alt="Emys" id="emys" />
 
@@ -29,7 +31,11 @@ return(
                 
                 <div className="buttons-container">
                     <button type="button" className="btn" id="regulamin">REGULAMIN</button>
-                    <button type="button" className="btn" id="sponsorzy">SPONSORZY</button>
+                    <button type="button" className="btn" id="sponsorzy" onClick={() => 
+                        document.getElementById("sponsors-popup").
+                        classList.remove("hidden")
+                    }>
+                    SPONSORZY</button>
                 </div>
             </div>
         </div>
