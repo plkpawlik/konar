@@ -1,0 +1,57 @@
+@import "../common";
+
+div#sponsors-popup {
+    position: absolute;
+    height: 80vh;
+    width: 80%;
+    left: 10%;
+    top: 10vh;
+    background-color: $c-sponspors;
+    border: $c-dark solid 3px;
+    z-index: 1000;
+
+    text-align: center;
+
+    overflow-y: scroll;
+    
+    
+    .sponsors-content {
+        padding: 20px;
+        height: 200vh;
+    }
+
+    .sponsors-heading {
+        display: inline;
+
+    }
+
+    .close {
+        font-size: 3rem;
+        color: $font-color;
+        opacity: 0.5;
+        position: fixed;
+        top: 13vh;
+        right: 15%;
+    }
+    .close:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+} 
+
+div#sponsors-popup::-webkit-scrollbar {
+    width: 0.33rem;
+}
+
+div#sponsors-popup::-webkit-scrollbar-track {
+    background-color: $c-dark;
+}
+
+div#sponsors-popup::-webkit-scrollbar-thumb {
+    background-color: $c-active;
+}
+
+
+.hidden {
+    display: none;
+}
