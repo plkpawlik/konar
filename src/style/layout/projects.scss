@@ -1,0 +1,129 @@
+@import "../common";
+
+div#projects {
+    height: 100vh;
+    padding-top: 25vh;
+
+    #projects-carousel {
+        position: relative;
+
+        #projects-container {
+            display: flex;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            scroll-behavior: smooth;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            & > * {
+                scroll-snap-align: center;
+            }
+
+            .project {
+                border-radius: 1.5rem;
+                margin: 15px;
+                height: 350px;
+                min-width: 300px;
+                text-align: center;
+                transition: all 0.1s ease-in-out;
+
+                box-shadow: 5px 3px 10px $c-dark;
+
+                .project-heading {
+                    position: relative;
+
+                    font-size: 1.4rem;
+                    text-transform: uppercase;
+                    padding: 15px;
+                    border-top-left-radius: 1.5rem;
+                    border-top-right-radius: 1.5rem;
+                    backdrop-filter: blur(10px);
+                }
+
+                &:hover,
+                &:focus {
+                    transform: scale(1.02);
+                    cursor: pointer;
+                }
+            }
+        }
+        #projects-container::before {
+            content: "";
+            min-width: 300px;
+            height: 100%;
+            background-color: transparent;
+        }
+        #projects-container::after {
+            content: "";
+            min-width: 300px;
+            height: 100%;
+            background-color: transparent;
+        }
+
+        .navigation-container {
+            text-align: right;
+            padding-right: 50px;
+
+            .btn {
+                color: $font-color;
+                margin: 0 15px;
+                padding-top: -1rem;
+                border: 2px solid #eb891b;
+                border-radius: 100%;
+                width: 3rem;
+                height: 3rem;
+                font-size: 1.3rem;
+                font-weight: $font-weight;
+                transition: all 0.1s ease-in-out;
+                font-weight: 500;
+            }
+            .btn:hover {
+                transform: scale(1.02);
+            }
+        }
+    }
+    #projects-carousel::before {
+        content: "";
+        min-width: 350px;
+        height: 110%;
+        background: linear-gradient(to right, $c-primary, transparent);
+        position: absolute;
+        left: 0;
+        transform: translate(-100px, -14px);
+        z-index: 1;
+    }
+    #projects-carousel::after {
+        content: "";
+        min-width: 350px;
+        min-height: 110%;
+        background: linear-gradient(to left, $c-primary, transparent);
+        position: absolute;
+        right: 0;
+        transform: translate(100px, -115%);
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    div#projects {
+        #projects-carousel {
+            #projects-container {
+                .project {
+                    height: 450px;
+                }
+            }
+        }
+        #projects-carousel::before {
+            min-width: 200px;
+            transform: translate(-150px, 14px);
+        }
+        #projects-carousel::after {
+            min-width: 200px;
+            transform: translate(150px, -110%);
+        }
+    }
+}

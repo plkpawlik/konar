@@ -1,6 +1,6 @@
-import React from 'react';
-import Emys from '/emys.svg';
-import Sponsors from './sponsors';
+import React from "react";
+import Emys from "/emys.svg";
+import Sponsors from "./sponsors";
 
 import "/src/style/layout/home.scss";
 
@@ -8,36 +8,45 @@ import "/src/style/layout/home.scss";
 /*   *   *   *   *   *   *   *   *   *   */
 
 export default function Home() {
-
-/*  Component layout
+    /*  Component layout
 /*   *   *   *   *   *   *   *   *   *   */
 
-return(
-    <>
-        <div id="wrapper">
+    return (
+        <>
+            <div id="wrapper">
+                <Sponsors visibility="hidden" />
 
-            <Sponsors visibility="hidden"/>
+                {/* robot bedzie do wymiany */}
+                <img src={Emys} alt="Emys" id="emys" />
 
-            {/* robot bedzie do wymiany */}
-            <img src={Emys} alt="Emys" id="emys" />
+                <div className="description-wrapper">
+                    <p className="konar-description">
+                        Koło Naukowe Robotyków "KoNaR" <br />
+                        działa przy Katedrze Cybernetyki i Robotyki, na wydziale
+                        Elektroniki Politechniki Wrocławskiej nieprzerwanie od
+                        2003 roku. Zajmujemy się budową małych robotów i
+                        jesteśmy organizatorami Robotic Areny.
+                    </p>
 
-            <div className="description-wrapper">
-                <p className="konar-description">
-                    Koło Naukowe Robotyków "KoNaR" <br />
-                    działa przy Katedrze Cybernetyki i Robotyki, na wydziale Elektroniki 
-                    Politechniki Wrocławskiej nieprzerwanie od 2003 roku. Zajmujemy się 
-                    budową małych robotów i jesteśmy organizatorami Robotic Areny.
-                </p>
-                
-                <div className="buttons-container">
-                    <button type="button" className="btn" id="regulamin">REGULAMIN</button>
-                    <button type="button" className="btn" id="sponsorzy" onClick={() => 
-                        document.getElementById("sponsors-popup").
-                        classList.remove("hidden")
-                    }>
-                    SPONSORZY</button>
+                    <div className="buttons-container">
+                        <button type="button" className="btn" id="regulamin">
+                            REGULAMIN
+                        </button>
+                        <button
+                            type="button"
+                            className="btn"
+                            id="sponsorzy"
+                            onClick={() =>
+                                document
+                                    .getElementById("sponsors-popup")
+                                    .classList.remove("hidden")
+                            }
+                        >
+                            SPONSORZY
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </>
-)};
+        </>
+    );
+}
