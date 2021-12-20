@@ -8,7 +8,7 @@ import config from '@/utility/config';
 import Home from '@/layout/home';
 import About from '@/layout/about';
 import Contact from '@/layout/contact';
-import Projects from '@/layout/projects';
+import Projects from '@/layout/projects/projects';
 import Management from '@/layout/management';
 import Tournaments from '@/layout/tournaments';
 
