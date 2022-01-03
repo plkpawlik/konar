@@ -22,5 +22,8 @@ export default {
         
         // tournaments page
         tournaments: { path: '/tournaments', name: 'tournaments', display: 'Zawody' },
+
+        // news page
+        news: { path: '/news', name: 'news', display:'Aktualności'},
     },
 };

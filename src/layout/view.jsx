@@ -9,6 +9,7 @@ import Home from '@/layout/home';
 import About from '@/layout/about';
 import Contact from '@/layout/contact';
 import Projects from '@/layout/projects/projects';
+import News from '@/layout/news/news';
 import Management from '@/layout/management';
 import Tournaments from '@/layout/tournaments';
 
@@ -35,6 +36,8 @@ return(
             <Route exact path={ config.route.contact.path } render={ () => <Contact /> } />
 
             <Route exact path={ config.route.projects.path } render={ () => <Projects /> } />
+
+            <Route exact path={ config.route.news.path } render={ () => <News /> } />
 
             <Route exact path={ config.route.management.path } render={ () => <Management /> } />
 
