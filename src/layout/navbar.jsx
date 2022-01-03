@@ -42,6 +42,10 @@ return(
                     { config.route.projects.display }
                 </NavLink>
 
+                <NavLink className='nav-link' exact to={ config.route.news.path }>
+                    { config.route.news.display }
+                </NavLink>
+
                 <NavLink className='nav-link' exact to={ config.route.tournaments.path }>
                     { config.route.tournaments.display }
                 </NavLink>
