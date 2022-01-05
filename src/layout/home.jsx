@@ -22,11 +22,11 @@ export default function Home() {
                 <div className="description-wrapper">
                     <p className="konar-description">
                         Koło Naukowe Robotyków "KoNaR" <br />
-                        działa przy Katedrze Cybernetyki i Robotyki, na
-                        wydziałach Elektroniki, Fotoniki i Mikrosystemów
-                        Politechniki Wrocławskiej nieprzerwanie od 2003 roku.
-                        Zajmujemy się budową małych robotów i jesteśmy
-                        organizatorami Robotic Areny.
+                        działa przy Katedrze Cybernetyki i Robotyki, na wydziale
+                        Elektroniki, Fotoniki i Mikrosystemów Politechniki
+                        Wrocławskiej nieprzerwanie od 2003 roku. Zajmujemy się
+                        budową małych robotów i jesteśmy organizatorami Robotic
+                        Areny.
                     </p>
 
                     <div className="buttons-container">
