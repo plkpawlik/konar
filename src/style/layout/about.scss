@@ -1,0 +1,34 @@
+@import '../common';
+
+div#about {
+  min-height: 100vh;
+  font-weight: $font-weight;
+
+  color: $font-color;
+
+  .about-wrapper {
+    padding: 10rem 15rem 15rem 15rem;
+    text-align: center;
+    margin: auto;
+  }
+
+  .konar-about {
+    font-size: 1.7rem;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  div#about {
+    display: block;
+    text-align: center;
+
+    .about-wrapper {
+      padding: 5rem 3rem;
+    }
+
+    .konar-about {
+      font-size: 1.4rem;
+    }
+  }
+}

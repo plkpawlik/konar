@@ -14,7 +14,7 @@ export default function Managment() {
 return(
     <>
 
-        <h1 className='display-3'>Managment</h1>
+        <h2 className='display-3'>Managment</h2>
 
     </>
 )};
