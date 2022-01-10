@@ -1,6 +1,7 @@
 import React from "react";
 import main_logo from "/main_logo.svg";
 import Sponsors from "./sponsors";
+import Statute from '/regulamin.pdf';
 
 import "/src/style/layout/home.scss";
 
@@ -30,9 +31,10 @@ export default function Home() {
                     </p>
 
                     <div className="buttons-container">
-                        <button type="button" className="btn" id="regulamin">
-                            REGULAMIN
-                        </button>
+                    
+                        <a href={Statute} download="regulamin.pdf" className="btn" id="regulamin"> 
+                            REGULAMIN 
+                        </a>
                         <button
                             type="button"
                             className="btn"
