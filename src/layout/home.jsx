@@ -1,5 +1,5 @@
 import React from "react";
-import Emys from "/emys.svg";
+import main_logo from "/main_logo.svg";
 import Sponsors from "./sponsors";
 
 import "/src/style/layout/home.scss";
@@ -17,7 +17,7 @@ export default function Home() {
                 <Sponsors visibility="hidden" />
 
                 {/* robot bedzie do wymiany */}
-                <img src={Emys} alt="Emys" id="emys" />
+                <img src={main_logo} alt="main_logo" id="main_logo" />
 
                 <div className="description-wrapper">
                     <p className="konar-description">
