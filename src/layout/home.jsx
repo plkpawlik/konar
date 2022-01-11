@@ -1,6 +1,7 @@
 import React from "react";
-import Emys from "/emys.svg";
+import main_logo from "/main_logo.svg";
 import Sponsors from "./sponsors";
+import Statute from '/regulamin.pdf';
 
 import "/src/style/layout/home.scss";
 
@@ -17,21 +18,23 @@ export default function Home() {
                 <Sponsors visibility="hidden" />
 
                 {/* robot bedzie do wymiany */}
-                <img src={Emys} alt="Emys" id="emys" />
+                <img src={main_logo} alt="main_logo" id="main_logo" />
 
                 <div className="description-wrapper">
                     <p className="konar-description">
                         Koło Naukowe Robotyków "KoNaR" <br />
                         działa przy Katedrze Cybernetyki i Robotyki, na wydziale
-                        Elektroniki Politechniki Wrocławskiej nieprzerwanie od
-                        2003 roku. Zajmujemy się budową małych robotów i
-                        jesteśmy organizatorami Robotic Areny.
+                        Elektroniki, Fotoniki i Mikrosystemów Politechniki
+                        Wrocławskiej nieprzerwanie od 2003 roku. Zajmujemy się
+                        budową małych robotów i jesteśmy organizatorami Robotic
+                        Areny.
                     </p>
 
                     <div className="buttons-container">
-                        <button type="button" className="btn" id="regulamin">
-                            REGULAMIN
-                        </button>
+                    
+                        <a href={Statute} download="regulamin.pdf" className="btn" id="regulamin"> 
+                            REGULAMIN 
+                        </a>
                         <button
                             type="button"
                             className="btn"

@@ -1,7 +1,6 @@
 @import '../common';
 
 div#wrapper {
-
   display: grid;
   grid-template-columns: 1fr 2fr;
   min-height: 100vh;
@@ -10,7 +9,7 @@ div#wrapper {
   color: $font-color;
 
   .description-wrapper {
-    padding: 7rem 7rem 7rem 2rem; 
+    padding: 7rem 7rem 7rem 2rem;
     text-align: center;
     margin: auto;
   }
@@ -28,40 +27,39 @@ div#wrapper {
   .btn {
     color: $font-color;
     margin: 0 15px;
-    border: 2px solid #EB891B;
+    border: 2px solid #eb891b;
     border-radius: 2rem;
     font-size: 1.3rem;
     font-weight: $font-weight;
   }
 
-  img#emys {
+  img#main_logo {
     margin: auto;
     height: 25rem;
   }
 }
 
-@media screen and ( max-width: 991px ) {
-div#wrapper {
+@media screen and (max-width: 991px) {
+  div#wrapper {
+    display: block;
+    text-align: center;
 
-  display: block;
-  text-align: center;
+    .description-wrapper {
+      padding: 5rem 3rem;
+    }
 
-  .description-wrapper {
-    padding: 5rem 3rem;
+    .konar-description {
+      font-size: 1.4rem;
+    }
+
+    .btn {
+      margin: 0 6px;
+      font-size: 1.1rem;
+    }
+
+    img#main_logo {
+      height: 15rem;
+      margin: 1rem auto -3rem -1.5rem;
+    }
   }
-
-  .konar-description {
-    font-size: 1.4rem;
-  }
-
-  .btn {
-    margin: 0 6px;
-    font-size: 1.1rem;
-  }
-
-  img#emys {
-    height: 17rem;
-    margin: 1rem auto -3rem -1.5rem;
-  }
-
-}}
+}
