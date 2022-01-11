@@ -30,7 +30,7 @@ const webmanifest = {
 export default defineConfig({
 
     // base url ( production 'konar' due to some CORS isues )
-    base: '/konar/',
+    base: '/',
 
 
     // used plugins
