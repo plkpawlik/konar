@@ -1,0 +1,75 @@
+@import '../common';
+
+div#management {
+  min-height: 100vh;
+  //font-weight: $font-weight;
+
+  color: $font-color;
+
+  .management-wrapper {
+    text-align: center;
+    margin: auto;
+  }
+
+  .position-management {
+    padding: 5rem 1rem 1rem 1rem;
+    font-size: 2.5rem;
+    align-self: center;
+    font-weight: lighter;
+    font-weight: 400;
+  }
+
+  .name-management {
+    font-size: 2.2rem;
+    align-self: center;
+    font-weight: 300;
+  }
+
+  .email-management {
+    font-size: 1.7rem;
+    align-self: center;
+    font-weight: lighter;
+  }
+
+  .row {
+    padding: 3rem 3rem;
+    display: flex;
+  }
+
+  .column {
+    padding: 3rem 3rem;
+    flex: 15%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  div#management {
+    display: block;
+    text-align: center;
+
+    .management-wrapper {
+      padding: 5rem 3rem;
+    }
+
+    .position-management {
+      font-size: 2rem;
+    }
+
+    .name-management {
+      font-size: 1.4rem;
+    }
+
+    .email-management {
+      font-size: 1rem;
+    }
+    .row {
+      padding: 3rem 3rem;
+      display: flex;
+    }
+
+    .column {
+      padding: 3rem 3rem;
+      flex: 15%;
+    }
+  }
+}
