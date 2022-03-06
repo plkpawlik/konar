@@ -21,25 +21,19 @@ npm run build
 #   Create commit
 #   *   *   *   *   *   *   *   *   *   *   *
 
-git add dist/ -f
+git add -A
 git commit -m 'deploy'
 
 
 #   Push commit
 #   *   *   *   *   *   *   *   *   *   *   *
 
-#   go to main
-cd ..
-
 #   push
-git push -f client/dist origin gh-pages
+git push origin dist
 
 
 #   After deploy
 #   *   *   *   *   *   *   *   *   *   *   *
-
-#   go to dev folder
-cd -
 
 #   log success
 echo 'Deploy completed successfully!'
