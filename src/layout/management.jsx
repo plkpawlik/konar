@@ -23,7 +23,7 @@ return(
                     </p>   
 
                     <p className='position-management'> Prezes ds. Finansowych
-                        <p className="name-management"> Jakub Kolasa
+                        <p className="name-management"> Krystian Szpakowski
                             <p className="email-management">cfo.konarrobotics@gmail.com</p> 
                         </p>  
                     </p>
@@ -34,7 +34,7 @@ return(
 
                 <div className="management-wrapper" class="column">
                     <p className='position-management'> Prezes Główny
-                        <p className="name-management"> Krystian Mirek
+                        <p className="name-management"> Jakub Kolasa
                             <p className="email-management">ceo.konarrobotics@gmail.com</p> 
                         </p>  
                     </p>  
@@ -50,13 +50,13 @@ return(
 
                 <div className="management-wrapper" class="column">
                 <p className='position-management'> Prezes ds. Projektowych
-                        <p className="name-management"> Patryk Szydlik
+                        <p className="name-management"> Wojciech Bohdan
                             <p className="email-management">cto.konarrobotics@gmail.com</p> 
                         </p>  
                     </p>     
 
                     <p className='position-management'> Prezes ds. Organizacyjnych
-                        <p className="name-management"> Piotr Gorzelnik
+                        <p className="name-management"> Adam Wąs
                             <p className="email-management">coo.konarrobotics@gmail.com</p> 
                         </p>  
                     </p>
