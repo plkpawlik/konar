@@ -32,7 +32,6 @@ export default defineConfig({
     // base url ( production 'konar' due to some CORS isues )
     base: '/',
 
-
     // used plugins
     plugins: [
 
@@ -54,11 +53,11 @@ export default defineConfig({
 
             // src components folder
             '@': resolve(__dirname, './src/'),
-        },
+        }
     },
 
     // wsl dev server polling
-    server: {
+    server: {   
         watch: {
             usePolling: true,
         }

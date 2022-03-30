@@ -24,18 +24,27 @@ div#projects {
       }
 
       .project {
-        border-radius: 1.5rem;
+        position: relative;
         margin: 15px;
-        height: 350px;
-        min-width: 300px;
         text-align: center;
         transition: all 0.1s ease-in-out;
 
-        box-shadow: 5px 3px 10px $c-dark;
+        .project-image {
+          height: 350px;
+          min-width: 300px;
+          position: relative;
+          object-fit: cover;
+          border-radius: 1.5rem;
+          box-shadow: 5px 3px 10px $c-dark;
+          
+        }
 
         .project-heading {
-          position: relative;
-
+          position: absolute;
+          left: 50%;
+          transform: translate(-50%, 0);
+          width: 100%;
+          z-index: 10;
           font-size: 1.4rem;
           text-transform: uppercase;
           padding: 15px;
