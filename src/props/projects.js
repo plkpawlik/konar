@@ -11,12 +11,12 @@ const projectsData = {
         {
             idx: 0,
             name: "Małe roboty",
-            img: "/maleRoboty.jpg",
+            img: "/maleRoboty.jpg"
         },
         {
             idx: 1,
             name: "Ariadna",
-            img: "/ariadna.jpg",
+            img: "/ariadna.jpg"
         },
         {
             idx: 2,

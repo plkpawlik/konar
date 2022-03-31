@@ -12,6 +12,8 @@ export default function Project(props) {
             alt={props.name}
             src={props.img}
             effect="blur"
+            threshold="50"
+            placeholderSrc={"./low"+props.img}
             />
             
             {/* <img className="project-pic" src={props.img} alt={props.name} /> */}

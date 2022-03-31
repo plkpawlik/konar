@@ -20,7 +20,7 @@ export default function Home() {
                 <Sponsors visibility="hidden" />
 
                 {/* robot bedzie do wymiany */}
-                <LazyLoadImage src={main_logo} alt="main_logo" id="main_logo" effect="blur"/>
+                <LazyLoadImage src={main_logo} alt="main_logo" id="main_logo" effect="blur" threshold="10"/>
 
                 <div className="description-wrapper">
                     <p className="konar-description">

@@ -1,0 +1,66 @@
+{
+  "_from": "avif.js",
+  "_id": "avif.js@0.2.0",
+  "_inBundle": false,
+  "_integrity": "sha512-X3ozZxqD/Y5KSG8vfa9eVoxtERYiPrZY5RQV2ZBz37pMTLLbBsimI+NL60mCx/DpksBmDOV7+93yFrl9k1OHKw==",
+  "_location": "/avif.js",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "avif.js",
+    "name": "avif.js",
+    "escapedName": "avif.js",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/avif.js/-/avif.js-0.2.0.tgz",
+  "_shasum": "1318d0ddf6fce1a4608b39243fada3afbaf5482f",
+  "_spec": "avif.js",
+  "_where": "C:\\Node.js\\konar",
+  "author": {
+    "name": "Kagami Hiiragi"
+  },
+  "bugs": {
+    "url": "https://github.com/Kagami/avif.js/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "dav1d.js": "^0.1.0"
+  },
+  "deprecated": false,
+  "description": "AVIF polyfill for the browser",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3",
+    "parcel-plugin-disable-loaders": "^1.0.3",
+    "terser": "^3.16.1"
+  },
+  "homepage": "https://github.com/Kagami/avif.js#readme",
+  "keywords": [
+    "AVIF",
+    "AV1",
+    "image",
+    "polyfill"
+  ],
+  "license": "CC0-1.0",
+  "main": "avif.js",
+  "name": "avif.js",
+  "parcelDisableLoaders": [
+    "wasm"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kagami/avif.js.git"
+  },
+  "scripts": {
+    "size": "cat *.js | terser -c -m | gzip -c | wc -c",
+    "start": "parcel demo/index.html --no-hmr",
+    "update-demo": "D=`mktemp -d` && parcel build demo/index.html --out-dir \"$D\" --public-url ./ && git checkout gh-pages && rm `git ls-files *` && mv \"$D\"/* . && rmdir \"$D\" && git add -A && git commit -m 'Update demo'"
+  },
+  "version": "0.2.0"
+}

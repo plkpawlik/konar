@@ -1,6 +1,6 @@
 import React from 'react';
 
-import main_logo from "/ra_logo.png";
+import main_logo from "/ra_logo.avif";
 import Sponsors from "./sponsors";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';

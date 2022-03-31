@@ -9,6 +9,8 @@ import config from '@/utility/config';
 
 const KoNaR_logo = '/KoNaR_logo_horizontal_small_transparent.png';
 
+const KoNaR_low='/KoNaR_logo_horizontal_small_transparent_low.png';
+
 /*  Component schema
 /*   *   *   *   *   *   *   *   *   *   */
 
@@ -28,7 +30,7 @@ return(
             <button className={`toggler ${ expand ? 'expand' : '' }`} onClick={ () => setExpand( prev => !prev ) }>
             </button>
 
-            <LazyLoadImage className="logo" src={KoNaR_logo} alt="Konar" />
+            <LazyLoadImage className="logo" placeholderSrc={KoNaR_low} src={KoNaR_logo} alt="Konar" threshold="10" visibleByDefault="true"/>
             
             <section className={`links ${ expand ? 'expand' : '' }`}>
 
