@@ -2,6 +2,8 @@ import React from 'react';
 
 import main_logo from "/ra_logo.png";
 import Sponsors from "./sponsors";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 import "/src/style/layout/home.scss";
 
@@ -21,7 +23,7 @@ return(
                 <Sponsors visibility="hidden" />
 
                 {/* robot bedzie do wymiany */}
-                <img src={main_logo} alt="main_logo" id="main_logo" />
+                <LazyLoadImage src={main_logo} alt="main_logo" id="main_logo" effect="blur" />
 
                 <div className="description-wrapper">
                     <p className="konar-description">

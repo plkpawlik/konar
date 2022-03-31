@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 // global config
 import config from '@/utility/config';
@@ -26,7 +28,7 @@ return(
             <button className={`toggler ${ expand ? 'expand' : '' }`} onClick={ () => setExpand( prev => !prev ) }>
             </button>
 
-            <img className="logo" src={KoNaR_logo} alt="Konar" />
+            <LazyLoadImage className="logo" src={KoNaR_logo} alt="Konar" />
             
             <section className={`links ${ expand ? 'expand' : '' }`}>
 
