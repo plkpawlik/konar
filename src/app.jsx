@@ -8,6 +8,7 @@ import { StoreProvider } from '@/context/store';
 import Main from '@/layout/main';
 
 
+
 /*  Component schema
 /*   *   *   *   *   *   *   *   *   *   */
 
@@ -23,8 +24,10 @@ return(
         <StoreProvider>
 
             <Router>
+
                 
                 <Main />
+
 
             </Router>
 

@@ -12,6 +12,7 @@ export default function NewsItem(props){
             alt={props.name}
             src={props.img}
             effect="blur"
+            placeholderSrc={props.placeholder}
             />
             <h3 className="newsItemTitle">{props.title}</h3>
             <p className="newsItemDescription">{props.description}</p>
