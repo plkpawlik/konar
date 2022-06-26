@@ -2,8 +2,7 @@ import React from "react";
 import main_logo from "/main_logo.svg";
 import Sponsors from "./sponsors";
 import Statute from '/regulamin.pdf';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
+import LazyImage from "../lazyimage/LazyImage";
 
 import "/src/style/layout/home.scss";
 
@@ -20,7 +19,7 @@ export default function Home() {
                 <Sponsors visibility="hidden" />
 
                 {/* robot bedzie do wymiany */}
-                <LazyLoadImage src={main_logo} alt="main_logo" id="main_logo" effect="blur" threshold="10"/>
+                <LazyImage use_extension="true" src={main_logo} alt="main_logo" id="main_logo" effect="blur" threshold="10"/>
 
                 <div className="description-wrapper">
                     <p className="konar-description">

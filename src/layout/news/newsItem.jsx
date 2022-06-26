@@ -1,13 +1,17 @@
 import React from "react";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
+import LazyImage from '../../lazyimage/LazyImage';
+import { FormatContex } from "../../img_support_check/img_check";
+
 
 export default function NewsItem(props){
 
+    const {formats}=React.useContext(FormatContex);
+
+    console.log(formats);
 
     return (
         <div className="newsItemWrapper">
-            <LazyLoadImage
+            <LazyImage
             className="newsItem"
             alt={props.name}
             src={props.img}

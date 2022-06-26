@@ -3,6 +3,7 @@ props do renderowania projektow:
 idx -> ktore od lewej,
 name -> nazwa projektu,
 img -> link do zdjecia,
+placeholder -> link do zdjecia od niskiej rozdzielczości potrzebne przy lazy loading
 alt -> img alt=
 
 Do ładowanie grafik typu placeholder zalecam stosowanie formatu webp.

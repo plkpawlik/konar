@@ -12,6 +12,7 @@ import Projects from '@/layout/projects/projects';
 import News from '@/layout/news/news';
 import Management from '@/layout/management';
 import Tournaments from '@/layout/tournaments';
+import Test3D from '@/layout/3dtest'
 
 
 /*  Component schema
@@ -42,6 +43,8 @@ return(
             <Route exact path={ config.route.management.path } render={ () => <Management /> } />
 
             <Route exact path={ config.route.tournaments.path } render={ () => <Tournaments /> } />
+
+            <Route exact path={ config.route.test3d.path } render={ () => <Test3D /> } />            
 
             <Route render={ () => <Home /> } />
 

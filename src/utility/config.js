@@ -25,5 +25,7 @@ export default {
 
         // news page
         news: { path: '/news', name: 'news', display:'Aktualności'},
+
+        test3d: { path: '/test3d', name: 'test3d', display:"Test3D"}
     },
 };

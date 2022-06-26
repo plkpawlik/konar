@@ -62,6 +62,9 @@ return(
                     { config.route.contact.display }
                 </NavLink>
 
+                <NavLink className='nav-link' exact to={ config.route.test3d.path }>
+                    { config.route.test3d.display }
+                </NavLink>
             </section>
 
         </nav>

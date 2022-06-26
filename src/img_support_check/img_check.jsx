@@ -28,6 +28,21 @@ export const FormatContex = React.createContext();
 
 const imgs=await getSupportedImageFormats();
 
+/*
+
+A class to check browser compatibilty for webp and avif formats.
+If avif is not supported the webp format is used,
+if webp is also not supported the jpeg is used.
+
+The supported formats can be accesed by 
+
+import { FormatContex } from "../img_support_check/img_check";
+
+const {formats}=React.useContext(FormatContex);
+
+formats - list of supported format extensions
+
+*/
 
 const ImageSupportProvider=(props)=>
 {
