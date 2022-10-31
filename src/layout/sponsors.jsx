@@ -4,10 +4,11 @@ import "/src/style/layout/sponsors.scss";
 
 export default function Sponsors(props) {
     return (
-    <div id="sponsors-popup" className={props.visibility}>
+    <div id="popup-sponsors" className={props.visibility}>
         <div className="sponsors-content">
-            <h1 className="sponsors-heading">Sponsorzy</h1>
-            <span className="close" onClick={ () => document.getElementById("sponsors-popup").classList.add("hidden") }>
+            <img src="/sponsors_logo/Starek.png" />
+            <img src="/sponsors_logo/Teltonika.svg" />
+            <span className="close" onClick={ () => document.getElementById("popup-sponsors").classList.add("hidden") }>
                 &times;
             </span>
         </div>
