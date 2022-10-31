@@ -41,11 +41,11 @@ export default function Home() {
                             id="sponsorzy"
                             onClick={() =>
                                 document
-                                    .getElementById("sponsors-popup")
+                                    .getElementById("popup-sponsors")
                                     .classList.remove("hidden")
                             }
                         >
-                            SPONSORZY
+                            WSPARLI NAS
                         </button>
                     </div>
                 </div>
